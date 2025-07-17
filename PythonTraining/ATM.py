@@ -7,7 +7,7 @@ class atm:
 
     def deposit(self, amount):
         if amount>0:
-            self.balance=+amount
+            self.balance+=amount
             print(f"{amount} doposit sucessfully")
             
         else:
@@ -36,6 +36,9 @@ def main():
             print("THANK YOU!!!")
         else:
             print("Choice between (1-3)")
+
+if __name__=="__main__":
+    main()            
 
 
 
