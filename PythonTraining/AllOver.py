@@ -51,7 +51,7 @@ print(palindrome(word))
 '''
 
 
-print("Hello World")
+#print("Hello World")
 
 
 '''
@@ -67,10 +67,14 @@ for i in range(len(nums)):
 
 
 
-
-
-
-
+#Add two lists
+'''
+list1=['1','2','4']
+list2=['1','2','3']
+s=list1+list2
+s.sort()
+print(s)
+'''
 
 
 
