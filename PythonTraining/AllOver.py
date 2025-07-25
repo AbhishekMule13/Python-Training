@@ -76,8 +76,22 @@ s.sort()
 print(s)
 '''
 
+#Int to binary
+'''
+s=27
+print(bin(s))
+'''
 
-
-
+class Solution(object):
+    def isPalindrome(self, s):
+        cleaned = ''
+        for char in s:
+            if char.isalnum():
+                cleaned += char.lower()  
+        return cleaned == cleaned[::-1]
+s = Solution()
+print(s.isPalindrome("A man, a plan, a canal: Panama"))  #  True
+print(s.isPalindrome("race a car"))                      #  False
+print(s.isPalindrome(" "))                               #  True
 
 
