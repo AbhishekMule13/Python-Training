@@ -82,6 +82,8 @@ s=27
 print(bin(s))
 '''
 
+
+'''
 class Solution(object):
     def isPalindrome(self, s):
         cleaned = ''
@@ -93,5 +95,25 @@ s = Solution()
 print(s.isPalindrome("A man, a plan, a canal: Panama"))  #  True
 print(s.isPalindrome("race a car"))                      #  False
 print(s.isPalindrome(" "))                               #  True
+'''
 
+'''
+s = "A man, a plan, a canal: Panama"
+s=s.lower()
+print(s)
+'''
+'''
+num=[1,2,3,4,5,6,7,8,9,10]
+for char in num:
+    if (char%2==0):
+        print(char," Square=",(char**2))
+    else:
+        print(char," Cube=",(char**3))
+
+result=[char**2 if char%2==0 else char**3 for char in num]
+print(result) 
+
+result=[char for char in num  if char%2==0]
+print(result)
+'''
 
