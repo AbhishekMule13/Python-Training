@@ -131,6 +131,27 @@ print(c)
 '''
 
 
+#Spy Number
+'''
+while True:
+    num = int(input("Enter a number: "))
+
+    sum_digits = 0
+    product_digits = 1
+    temp = num
+
+    while temp > 0:
+        digit = temp % 10
+        sum_digits += digit
+        product_digits *= digit
+        temp //= 10
+
+    if sum_digits == product_digits:
+        print(f"{num} is a Spy number\n")
+    else:
+        print(f"{num} is NOT a Spy number\n")
+'''
+
 
 
 
