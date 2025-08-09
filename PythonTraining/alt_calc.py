@@ -4,7 +4,7 @@
 while True:
     num=list(map(int, input("Enter the list of num:(Sprated by spaces):").split()))
     result=num[0]
-    for i in range(1,len(num)):
+    for i in range(0,len(num)):
         if i % 2!=0:
             result+=i
         else:
@@ -25,4 +25,4 @@ while True:
 
 
 
-
+
