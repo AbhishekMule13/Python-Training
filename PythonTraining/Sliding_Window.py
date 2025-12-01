@@ -16,6 +16,8 @@ def longestBalancedSubarray(nums):
         else:
             first_time_seen[balance] = i
 
+            
+
     return longest
 
 nums = [0, 1, 0, 0, 1, 1]
